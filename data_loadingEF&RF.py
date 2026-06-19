@@ -14,7 +14,7 @@ X, y = make_classification(
 columns = [f'feature_{i}' for i in range(X.shape[1])]
 df = pd.DataFrame(X, columns=columns)
 df['target'] = y
-df.to_csv('rf_dataEF.csv', index=False)
+df.to_csv('rf_dataEF&RF.csv', index=False)
 
 print(f"Saved {len(df)} samples with {X.shape[1]} features")
 print(f"Class balance: {np.bincount(y)}")

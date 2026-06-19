@@ -109,7 +109,7 @@ class ExtremelyRandomForest:
         return accuracy
 
 
-df = pd.read_csv('rf_dataEF.csv')
+df = pd.read_csv('rf_dataEF&RF.csv')
 X = df[[col for col in df.columns if col != 'target']].values
 y = df['target'].values
 

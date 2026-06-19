@@ -128,7 +128,7 @@ class ExtremelyRandomForestFuture:
         return accuracy
 
 
-df = pd.read_csv('rf_dataEF.csv')
+df = pd.read_csv('rf_dataEF&RF.csv')
 X = df[[col for col in df.columns if col != 'target']].values
 y = df['target'].values
 
@@ -164,7 +164,7 @@ plt.plot(n_trees_list, train_scores, 'o-', label='Train Accuracy', color='blue')
 plt.plot(n_trees_list, test_scores, 'o-', label='Test Accuracy', color='red')
 plt.xlabel('Number of Trees')
 plt.ylabel('Accuracy')
-plt.title('Random Forest: Accuracy vs Number of Trees')
+plt.title('Custom Model: Accuracy vs Number of Trees')
 plt.legend()
 plt.grid(True, alpha=0.3)
 plt.show()
