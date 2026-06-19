@@ -1,5 +1,7 @@
 # Random Forest Variants — From Scratch
 
+![Random Forest Dashboard](randomforestbetterpng.png)
+
 A family of from-scratch decision tree ensemble classifiers built entirely with NumPy and pandas — no ML libraries. Includes four variants progressing from pure randomness to optimal splitting with sklearn-level features.
 
 ## Project Structure
